@@ -19,6 +19,7 @@ import { users, posts } from "./data/index.js";
 
 // CONFIGURATIONS
 const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:3000";
+const origins = CLIENT_URL.includes(",") ? CLIENT_URL.split(",") : CLIENT_URL;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();
@@ -31,7 +32,7 @@ app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(
   cors({
-    origin: CLIENT_URL,
+    origin: origins,
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
