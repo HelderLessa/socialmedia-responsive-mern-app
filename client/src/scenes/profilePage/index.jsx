@@ -8,6 +8,8 @@ import MyPostWidget from "scenes/widgets/MyPostWidget";
 import PostsWidget from "scenes/widgets/PostsWidget";
 import UserWidget from "scenes/widgets/UserWidget";
 
+const apiUrl = process.env.REACT_APP_BASE_URL;
+
 const ProfilePage = () => {
   const [user, setUser] = useState(null);
   const { userId } = useParams();
@@ -16,11 +18,11 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/users/${userId}`, {
+      const response = await fetch(`${apiUrl}/users/${userId}`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
-      const data = response.json();
+      const data = await response.json();
       setUser(data);
     } catch (error) {
       console.error("Error posting:", error);
