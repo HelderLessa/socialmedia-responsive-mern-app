@@ -1,6 +1,6 @@
 # **MERN Social Media App**
 
-This is a complete **Fullstack MERN (MongoDB, Express.js, React, and Node.js)** application project with features such as user authentication, dark mode, like system, and a fully responsive layout.
+This is a full-stack MERN (MongoDB, Express.js, React, and Node.js) application that includes features such as user authentication, dark mode, a like system, and a fully responsive layout. It simulates a social media web platform.
 
 ## 🛠️ **Features**
 
