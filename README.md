@@ -2,7 +2,7 @@
 
 This is a full-stack MERN (MongoDB, Express.js, React, and Node.js) application that includes features such as user authentication, dark mode, a like system, and a fully responsive layout. It simulates a social media web platform.
 
-📺 [Live App on Render]([https://nextjs-the-wild-oasis-beta.vercel.app/](https://socialmedia-responsive-mern-app-frontend.onrender.com/))
+📺 [Live App on Render](https://socialmedia-responsive-mern-app-frontend.onrender.com)
 
 ## 🛠️ **Features**
 
